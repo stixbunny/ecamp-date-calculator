@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Calculadora de edad</title>
+  <!-- JQuery-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+  <body class="bg-dark-subtle">
+      <main class="container pt-5">
+        <div id="mainCard" class="container bg-white w-50 p-3 rounded-start-3 rounded-top-3 box overflow-hidden">
+          <!-- Formulario -->
+          <form novalidate onsubmit="return validateForm(this)" action="#mainCard">
+            <div class="row justify-content-start">
+              <!-- Input Dia -->
+              <div class="card col col-md-3 border-0">
+                  <p>Día</p>
+                  <input name="dia" id="dia" type="number" placeholder="DD" class="input" min="1" max="31" required="true">
+                  <p id="error-dia" class="d-none">Este campo es requerido</p>
+              </div>
+              <!-- Input Mes -->
+              <div class="card col col-md-3 border-0">
+                  <p>Mes</p>
+                  <input name="mes" id="mes" type="number" placeholder="MM" class="input" min="1" max="12" required="true">
+                  <p id="error-mes" class="d-none">Este campo es requerido</p>
+              </div>
+              <!-- Input Año -->
+              <div class="card col col-md-3 border-0">
+                  <p>Año</p>
+                  <input name="año" id="año" type="number" placeholder="AAAA" class="input" min="0" max="2023" required="true">
+                  <p id="error-año" class="d-none">Este campo es requerido</p>
+              </div>
+            </div>
+            <!-- Boton -->
+            <div class="d-flex justify-content-lg-end justify-content-md-center justify-content-sm-center m-2">
+                <button type="submit" target="_blank" class="btn btn-outline-dark icono border-0 rounded-circle">
+                  <img class="w-75" src="./assets/img/icon-arrow.svg" alt="">
+                </button>
+            </div>
+
+          </form>
+          <!-- Resultado -->
+          <div class="dateResult border-top">
+              <div class=>
+                <p class="lh-1"><span id="resultAño" class="textViolet">--</span> años</p>
+                <p class="lh-1"><span id="resultMes" class="textViolet">--</span> meses</p>
+                <p class="lh-1"><span id="resultDia" class="textViolet">--</span> días</p>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- JavaScript -->
+      <script src="./assets/js/index.js"></script>
+    <!-- Bootstrap -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
+  

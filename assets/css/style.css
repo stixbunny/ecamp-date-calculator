@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;1,400;1,700;1,800&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.dateResult { 
+    font-style: italic;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+#mainCard {
+    border-bottom-right-radius: 30%;
+}
+
+.box{
+    box-shadow: 5px 5px 10px 1px blueviolet;
+}
+.input{
+    height: 40px;
+}
+.input::placeholder{
+    padding: 1em;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.input:hover{
+    border-color: blueviolet;
+}
+
+.icono{
+    width: 60px;
+    height: 60px;
+    background-color: blueviolet;
+}
+.textViolet{
+    color: blueviolet;
+}
+
+/* Errores */
+
+#error-dia,
+#error-mes,
+#error-año{
+    font-size: .6rem;
+    font-weight: 400;
+    font-style: italic;
+    color: red;
+}
+
+/* Eliminar flechas en input numero */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* input[type=number]{
+    -moz-appearance: textfield;
+} */
