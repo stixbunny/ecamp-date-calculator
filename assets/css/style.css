@@ -8,12 +8,12 @@
 
 .dateResult { 
     font-style: italic;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 800;
 }
 
 #mainCard {
-    border-bottom-right-radius: 30%;
+    border-bottom-right-radius: 20%;
 }
 
 .box{
@@ -23,7 +23,7 @@
     height: 40px;
 }
 .input::placeholder{
-    padding: 1em;
+    padding: 1em 0;
     font-size: 1.2rem;
     font-weight: 700;
 }
@@ -42,9 +42,7 @@
 
 /* Errores */
 
-#error-dia,
-#error-mes,
-#error-año{
+.error {
     font-size: .6rem;
     font-weight: 400;
     font-style: italic;
